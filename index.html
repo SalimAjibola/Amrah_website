@@ -21,65 +21,47 @@
     }
   </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50">
 
   <!-- Header -->
   <header class="bg-white shadow-md">
     <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl md:text-3xl font-bold text-gray-800">Amrah Store</h1>
-      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
-        <a href="index.html" class="hover:text-yellow-500">Home</a>
-        <a href="#" class="hover:text-yellow-500">Shop</a>
-        <a href="#" class="hover:text-yellow-500">Blog</a>
-        <a href="#" class="hover:text-yellow-500">About</a>
-        <a href="#" class="hover:text-yellow-500">Contact</a>
+      <h1 class="text-2xl font-bold text-gray-800">Amrah Store</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-yellow-500">Home</a>
+        <a href="#" class="text-gray-700 hover:text-yellow-500">Shop</a>
+        <a href="#" class="text-gray-700 hover:text-yellow-500">Blog</a>
+        <a href="#" class="text-gray-700 hover:text-yellow-500">About</a>
+        <a href="#" class="text-gray-700 hover:text-yellow-500">Contact</a>
       </nav>
       <div class="flex items-center space-x-4">
-        <input type="text" placeholder="Search..." class="p-2 border rounded hidden md:block">
+        <input type="text" placeholder="Search..." class="p-2 border rounded">
         <a href="cart.html" class="relative">
           <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">0</span>
           <img src="https://img.icons8.com/ios-filled/24/000000/shopping-cart.png"/>
         </a>
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-               xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
       </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-      <nav class="flex flex-col p-4 space-y-2">
-        <a href="index.html" class="hover:text-yellow-500">Home</a>
-        <a href="#" class="hover:text-yellow-500">Shop</a>
-        <a href="#" class="hover:text-yellow-500">Blog</a>
-        <a href="#" class="hover:text-yellow-500">About</a>
-        <a href="#" class="hover:text-yellow-500">Contact</a>
-      </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative bg-cover bg-center h-80 md:h-96 lg:h-[500px]" style="background-image: url('https://assets0.mirraw.com/newsletter_banners/1991/NEWS-DESK_main_webp.webp?1758877400');">
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-4">
-      <h1 class="text-3xl md:text-5xl font-bold">Elegant Abayas</h1>
-      <p class="mt-4 text-lg md:text-2xl">Modest fashion for every occasion</p>
-      <a href="#products" class="mt-6 inline-block gradient-btn text-white py-3 px-6 rounded-full hover:shadow-lg text-lg md:text-xl">Shop Now</a>
+  <section class="relative bg-cover bg-center" style="background-image: url('https://assets0.mirraw.com/newsletter_banners/1991/NEWS-DESK_main_webp.webp?1758877400');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10 text-center text-white py-32">
+      <h1 class="text-4xl font-bold">Elegant Abayas</h1>
+      <p class="mt-4 text-xl">Modest fashion for every occasion</p>
+      <a href="#products" class="mt-6 inline-block gradient-btn text-white py-2 px-6 rounded-full hover:shadow-lg">Shop Now</a>
     </div>
   </section>
 
   <!-- Products Section -->
   <section id="products" class="py-12 container mx-auto">
-    <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">Our Collections</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <h2 class="text-3xl font-semibold text-center mb-8">Our Collections</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
       <!-- Product Cards -->
       <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-        <img src="https://assets0.mirraw.com/images/13269545/image_original_long_webp.webp?1747316360" alt="Classic Black Abaya" class="object-cover h-64 w-full">
+        <img src="https://assets0.mirraw.com/images/13269545/image_original_long_webp.webp?1747316360" alt="Abaya" class="object-cover">
         <div class="p-4 text-center">
           <h3 class="text-xl font-semibold">Classic Black Abaya</h3>
           <p class="text-gray-500">N49,000.00</p>
@@ -88,7 +70,7 @@
       </div>
 
       <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-        <img src="https://assets0.mirraw.com/images/13269524/image_original_long_webp.webp?1747316314" alt="Floral Pattern Abaya" class="object-cover h-64 w-full">
+        <img src="https://assets0.mirraw.com/images/13269524/image_original_long_webp.webp?1747316314" alt="Abaya" class="object-cover">
         <div class="p-4 text-center">
           <h3 class="text-xl font-semibold">Floral Pattern Abaya</h3>
           <p class="text-gray-500">N59,000.00</p>
@@ -96,7 +78,96 @@
         </div>
       </div>
 
-      <!-- Add remaining products similarly... -->
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13269716/image_original_long_webp.webp?1747316753" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Embroidered Abaya</h3>
+          <p class="text-gray-500">N69,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Embroidered Abaya" data-price="69.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13042459/image_long_webp.webp?1737382496" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Luxury Satin Abaya</h3>
+          <p class="text-gray-500">N79,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Luxury Satin Abaya" data-price="79.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13205664/image_long_webp.webp?1744629739" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Pearl White Abaya</h3>
+          <p class="text-gray-500">N77,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Pearl White Abaya" data-price="69.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13205598/image_long_webp.webp?1744629545" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Golden Embroidered Abaya</h3>
+          <p class="text-gray-500">N89,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Golden Embroidered Abaya" data-price="89.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13221033/5_long_webp.webp?1745056489" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Rose Pink Abaya</h3>
+          <p class="text-gray-500">N50,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Rose Pink Abaya" data-price="59.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13042230/image_long_webp.webp?1737381867" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Emerald Green Abaya</h3>
+          <p class="text-gray-500">N89,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Emerald Green Abaya" data-price="79.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13249997/1_long_webp.webp?1746506189" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Sky Blue Abaya</h3>
+          <p class="text-gray-500">N35,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Sky Blue Abaya" data-price="64.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13269751/image_original_long_webp.webp?1747316851" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Sky Blue Abaya</h3>
+          <p class="text-gray-500">N65,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Sky Blue Abaya" data-price="64.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/11335808/BT-FOA-014-Beige_1_long_webp.webp?1688224702" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Sky Blue Abaya</h3>
+          <p class="text-gray-500">N50,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Sky Blue Abaya" data-price="64.99">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://assets0.mirraw.com/images/13269694/image_original_long_webp.webp?1747316694" alt="Abaya" class="object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold">Lavender Purple Abaya</h3>
+          <p class="text-gray-500">N60,000.00</p>
+          <button class="mt-4 w-full gradient-btn text-white py-2 rounded add-to-cart" data-name="Lavender Purple Abaya" data-price="60000">Add to Cart</button>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -114,37 +185,25 @@
 
   <!-- JavaScript -->
   <script>
-    // Mobile menu toggle
-    const menuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Cart functionality
     const cartCount = document.getElementById('cart-count');
     const addButtons = document.querySelectorAll('.add-to-cart');
 
-    function updateCartCount() {
-      const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-      cartCount.textContent = cartItems.length;
-    }
-
     addButtons.forEach(button => {
       button.addEventListener('click', () => {
+        let count = parseInt(cartCount.textContent);
+        count++;
+        cartCount.textContent = count;
+
+        // Save cart item to localStorage
         let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
         cartItems.push({
           name: button.dataset.name,
           price: button.dataset.price
         });
         localStorage.setItem('cart', JSON.stringify(cartItems));
-        updateCartCount();
         alert(`${button.dataset.name} added to cart!`);
       });
     });
-
-    // Initialize cart count on load
-    updateCartCount();
   </script>
 
 </body>
